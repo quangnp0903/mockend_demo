@@ -12,3 +12,22 @@
 # GraphQL examples
 
 - [https://mockend.com/mockend/demo/graphql?query=...](https://mockend.com/mockend/demo/graphql?query=%7B%0A%20%20post(id%3A%205)%20%7B%0A%20%20%20%20title%2C%0A%20%20%20%20cover%0A%20%20%7D%0A%7D)
+
+
+# Example for graphql
+{
+  post(id: 2){
+    id
+    title
+    comments {
+      id
+      body
+    }
+  }
+  comment(id: 1){
+    body
+    post {
+      id
+    }
+  }
+}
